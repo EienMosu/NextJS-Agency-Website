@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+
+  .card {
+    flex: 1;
+    padding: 100px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+
+    .title {
+      font-size: 50px;
+      margin: 0;
+    }
+
+    .brand {
+      color: green;
+    }
+
+    .desc {
+      font-size: 20px;
+      margin: 0;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background-color: green;
+      color: white;
+      font-weight: 500;
+      width: 100px;
+      padding: 20px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+}

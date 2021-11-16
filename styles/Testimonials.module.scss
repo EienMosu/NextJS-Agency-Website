@@ -1,0 +1,55 @@
+.container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 100px;
+
+  .title {
+    text-align: center;
+    margin: 0;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    .card {
+      width: 30%;
+
+      .comment {
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      .person {
+        display: flex;
+        align-items: center;
+
+        .avatar {
+          border-radius: 50%;
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          margin-left: 20px;
+
+          .username {
+            font-weight: bold;
+            color: #555;
+          }
+
+          .jobTitle {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

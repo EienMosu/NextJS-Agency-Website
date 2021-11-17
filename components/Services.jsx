@@ -24,7 +24,7 @@ const Services = ({ services }) => {
                     className={styles.video}
                   />
                 ) : (
-                  <Image
+                  <img
                     src={`/img/${service.photo}`}
                     width="100%"
                     height="100%"

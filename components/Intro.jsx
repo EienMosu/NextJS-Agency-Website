@@ -20,7 +20,7 @@ const Intro = () => {
         <button className={styles.button}>DISCOVER</button>
       </div>
       <div className={styles.card}>
-        <Image
+        <img
           alt=""
           src="/img/Avocado.png"
           width="100%"

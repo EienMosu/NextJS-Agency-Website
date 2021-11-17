@@ -43,3 +43,25 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column;
+
+    .card {
+      padding: 50px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .title {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+
+      .desc {
+        display: none;
+      }
+    }
+  }
+}

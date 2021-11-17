@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  padding: 50px;
+
+  .cardL {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+
+    .imgContainer {
+      width: 30%;
+      margin: 5px;
+      position: relative;
+      width: 300px;
+      height: 250px;
+    }
+  }
+
+  .cardS {
+    flex: 1;
+
+    .title {
+      font-size: 60px;
+    }
+
+    .button {
+      padding: 15px;
+      border: none;
+      background-color: green;
+      color: white;
+      font-size: 20px;
+      border-radius: 10px;
+      margin-top: 50px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column-reverse;
+    padding: 20px;
+
+    .cardL {
+      .imgContainer {
+        width: 300px;
+        height: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    }
+
+    .cardS {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .title {
+        font-size: 50px;
+      }
+
+      .button {
+        margin: 20px 0px;
+      }
+    }
+  }
+
+  .cardL::before {
+    content: "Projects";
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,59 @@
+.container {
+  height: 250px;
+  border-top: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+  padding: 50px;
+
+  .cardL {
+    flex: 2;
+
+    .title {
+      font-weight: 400;
+      color: white;
+      background-color: green;
+      width: max-content;
+      padding: 5px;
+    }
+
+    .linkTitle {
+      text-decoration: underline;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+    }
+
+    .linkText {
+      margin-right: 20px;
+    }
+  }
+
+  .cardS {
+    flex: 1;
+
+    .cardItem {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    height: auto;
+    flex-direction: column;
+
+    .title,
+    .linkTitle {
+      font-size: 30px;
+    }
+
+    .cardItem {
+      text-align: center;
+      font-size: 15px;
+    }
+  }
+}
